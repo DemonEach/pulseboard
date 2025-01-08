@@ -37,7 +37,10 @@ out/
 .vscode/
 
 # Logs
+logs
+/logs/*.log
 client/logs
+server/logs
 client/*.log
 client/npm-debug.log*
 client/yarn-debug.log*
