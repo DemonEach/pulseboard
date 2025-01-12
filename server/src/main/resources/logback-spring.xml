@@ -7,7 +7,7 @@
     <!-- General FILE appender -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${loggingPath}logFile.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <fileNamePattern>${loggingPath}/logFile.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
         <encoder>

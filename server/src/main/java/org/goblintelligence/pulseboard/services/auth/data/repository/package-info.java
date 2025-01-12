@@ -1,0 +1,1 @@
+package org.goblintelligence.pulseboard.services.auth.data.repository;
