@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public abstract class ChangeUserImportantDataRequest {
+public abstract class ChangeAccountImportantDataRequest {
 
-    @NotNull(message = "User id cannot be empty!")
-    private Integer userId;
+    @NotNull(message = "Account id cannot be empty!")
+    private Integer accountId;
     @NotEmpty(message = "Current password cannot be empty!")
     private String currentPassword;
 }

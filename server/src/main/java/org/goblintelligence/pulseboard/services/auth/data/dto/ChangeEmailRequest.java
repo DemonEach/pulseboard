@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class ChangeEmailRequest extends ChangeUserImportantDataRequest {
+public class ChangeEmailRequest extends ChangeAccountImportantDataRequest {
 
     @NotEmpty(message = "Email cannot be empty!")
     private String email;

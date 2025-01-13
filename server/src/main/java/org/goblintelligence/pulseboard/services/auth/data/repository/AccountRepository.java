@@ -1,9 +1,9 @@
 package org.goblintelligence.pulseboard.services.auth.data.repository;
 
-import org.goblintelligence.pulseboard.services.auth.data.entity.User;
+import org.goblintelligence.pulseboard.services.auth.data.entity.Account;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UserRepository extends CrudRepository<User, Integer> {
+public interface AccountRepository extends CrudRepository<Account, Integer> {
 
     boolean existsByUsername(String username);
 

@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class ChangeUsernameRequest extends ChangeUserImportantDataRequest {
+public class ChangeUsernameRequest extends ChangeAccountImportantDataRequest {
 
     @NotEmpty(message = "Username cannot be empty!")
     private String username;

@@ -7,8 +7,8 @@ import org.springframework.data.relational.core.mapping.Table;
 import java.time.OffsetDateTime;
 
 @Data
-@Table(name = "user")
-public class User {
+@Table(name = "account")
+public class Account {
 
     @Id
     private Integer id;

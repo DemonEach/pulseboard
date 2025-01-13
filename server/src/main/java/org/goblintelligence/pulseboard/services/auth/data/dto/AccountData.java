@@ -1,6 +1,5 @@
 package org.goblintelligence.pulseboard.services.auth.data.dto;
 
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,10 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class UpdateUserRequest {
+public class AccountData {
 
-    @NotNull(message = "Id cannot be empty!")
     private Integer id;
+    private String username;
+    private String email;
     private String name;
     private String phoneNumber;
     private String organization;

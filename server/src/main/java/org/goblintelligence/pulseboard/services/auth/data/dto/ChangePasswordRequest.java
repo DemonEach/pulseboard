@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class ChangePasswordRequest extends ChangeUserImportantDataRequest {
+public class ChangePasswordRequest extends ChangeAccountImportantDataRequest {
 
     @NotEmpty(message = "Password cannot be empty!")
     private String password;
