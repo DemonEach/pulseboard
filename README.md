@@ -15,6 +15,10 @@ DB_USER=postgres # postgres default user
 JWT_SECRET=MyC001AndTot@1y$ecur3JwtS3cr3tButCh@ngetIt # JWT secret MAKE SURE TO CHANGE IT
 SERVER_PORT=8880
 LOGS_PATH=/app/logs/ # logs path you can change if you want
+MAIL_HOST=smtp.gmail.com # smtp server host
+MAIL_PORT=587 # smtp server port
+MAIL_USER=test@gmail.com # smtp server username
+MAIL_PASS=password # smtp server password
 ```
 
 `env/db.env`, you can read [postgresql docker](https://hub.docker.com/_/postgres/) documentation to add more parameters
