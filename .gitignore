@@ -41,6 +41,7 @@ logs
 /logs/*.log
 client/logs
 server/logs
+server/logFile*
 client/*.log
 client/npm-debug.log*
 client/yarn-debug.log*
