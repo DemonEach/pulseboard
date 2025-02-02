@@ -20,9 +20,8 @@ public class ProjectController {
     private final ProjectService projectService;
 
     @GetMapping("/{accountId}")
-    public ResponseEntity<List<ProjectData>> getAvailableProjects(
-            @NotNull(message = "Account id cannot be empty!")
-            @PathVariable Integer accountId) {
+    public ResponseEntity<List<ProjectData>> getAvailableProjects(@NotNull(message = "Account id cannot be empty!")
+                                                                  @PathVariable Integer accountId) {
         return ResponseEntity.ok(projectService.getAvailableProjects(accountId));
     }
 
@@ -34,7 +33,7 @@ public class ProjectController {
 
     @DeleteMapping("/{projectId}")
     public ResponseEntity<Void> deleteProject(@NotNull(message = "Project id cannot be empty!")
-                                                     @PathVariable UUID projectId) {
+                                              @PathVariable UUID projectId) {
         projectService.deleteProject(projectId);
         return ResponseEntity.ok().build();
     }

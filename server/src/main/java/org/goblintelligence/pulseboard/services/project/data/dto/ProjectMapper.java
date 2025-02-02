@@ -11,6 +11,6 @@ public interface ProjectMapper {
 
     ProjectMapper INSTANCE = Mappers.getMapper(ProjectMapper.class);
 
-    ProjectData fromProjectWithPermissiontoProjectData(ProjectWithPermissionProjection projectWithPermissionProjection);
-    List<ProjectData> fromProjectsWithPermissiontoProjectDatas(List<ProjectWithPermissionProjection> projectWithPermissionProjection);
+    ProjectData fromProjectWithPermissionToProjectData(ProjectWithPermissionProjection projectWithPermissionProjection);
+    List<ProjectData> fromProjectWithPermissionListToProjectDataList(List<ProjectWithPermissionProjection> projectWithPermissionProjection);
 }

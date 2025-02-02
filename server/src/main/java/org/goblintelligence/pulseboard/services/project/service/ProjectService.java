@@ -33,7 +33,7 @@ public class ProjectService {
     public List<ProjectData> getAvailableProjects(Integer accountId) {
         List<ProjectWithPermissionProjection> projectWithPermissions = projectRepository.getAvailableProjectsByAccountId(accountId);
 
-        return ProjectMapper.INSTANCE.fromProjectsWithPermissiontoProjectDatas(projectWithPermissions);
+        return ProjectMapper.INSTANCE.fromProjectWithPermissionListToProjectDataList(projectWithPermissions);
     }
 
     /**

@@ -9,6 +9,7 @@ import java.time.Instant;
 @Data
 @Builder
 public class ProjectPremissions {
+
     private UUID id;
     private UUID projectId;
     private Integer accountId;

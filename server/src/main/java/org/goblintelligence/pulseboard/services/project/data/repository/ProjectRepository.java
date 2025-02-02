@@ -11,6 +11,7 @@ import java.util.UUID;
 
 @Repository
 public interface ProjectRepository extends CrudRepository<Project, UUID> {
+
     @Query(value = """
                 select p.id, p.name, p.code, p.description, pp.permission, pp.creation_time, pp.update_time from project p 
                     join project_permission pp on pp.project_id = p.id

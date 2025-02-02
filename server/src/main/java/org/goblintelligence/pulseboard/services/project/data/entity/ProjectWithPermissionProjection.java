@@ -9,6 +9,7 @@ import java.util.UUID;
 @Data
 @Builder
 public class ProjectWithPermissionProjection {
+
     private UUID id;
     private String name;
     private String code;

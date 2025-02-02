@@ -11,7 +11,7 @@ public interface ProjectPermissionsRepository extends CrudRepository<ProjectPerm
 
     @Modifying
     @Query(value = """
-    delete from project_permission where project_id = :projectId
-""")
+                delete from project_permission where project_id = :projectId
+            """)
     void deleteAllByProjectId(UUID projectId);
 }
